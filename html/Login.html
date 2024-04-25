@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-form">
+        <h1>Smart Attendance System</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Login as an Admin User</h2>
+                    <input type="text" id="adminId" placeholder="Admin ID" required autofocus>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button class="btn" onclick="login()">Login</button>
+                <div id="errorMessage" style="display: none;" >
+                    <p id="message">Incorrect admin ID or password. Please try again.</p>
+                </div>        
+                    <p class="Forgotpass">Forgot Password?<a href="#">Forgot</a></p>
+                    <p class="account">Don't have an account?<a href="#">Register</a></p>
+                </div>
+                <div id="errorMessage" style="display: none;">
+                    <p>Incorrect admin ID or password. Please try again.</p>
+                </div>
+                <div class="form-img">
+                    <img src="/png/security-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            var adminId = document.getElementById('adminId').value;
+            var password = document.getElementById('password').value;
+    
+            if (adminId === '2022-11105' && password === 'adminmo') {
+                window.location.href = 'Dashboard.html';
+            } else {
+                // Display a popup message
+                var errorMessage = document.getElementById('errorMessage');
+                errorMessage.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

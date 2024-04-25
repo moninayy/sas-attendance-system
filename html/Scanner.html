@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="/css/scanner.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="scan-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">SAS: Attendance System</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Dashboard.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Personnel.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Personnel</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Scanner.html">
+                        <span class="icon">
+                            <ion-icon name="qr-code-outline"></ion-icon>
+                        </span>
+                        <span class="title">QR CODE</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Login.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="datetime">
+                    <p id="datetime"></p>
+                </div>
+                <div class="user">
+                    <img src="/png/Domdom__Pic.png" alt="">
+                </div>
+            </div>
+      <!-- ========================= Qr Image ==================== -->
+            
+            <div class="qr-container">
+                <img class="qr-image" src="/png/qr-link.jpg" alt="QR Code">
+                <p class="description">Scan to record your attendance, and make sure to check your status.</p>
+            </div>
+    <!-- =========== Scripts =========  -->
+    <script src="/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

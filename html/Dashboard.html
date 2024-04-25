@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="scan-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">SAS: Attendance System</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Dashboard.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Personnel.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Personnel</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Scanner.html">
+                        <span class="icon">
+                            <ion-icon name="qr-code-outline"></ion-icon>
+                        </span>
+                        <span class="title">QR CODE</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/html/Login.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="datetime">
+                    <p id="datetime"></p>
+                </div>
+                <div class="user">
+                    <img src="/png/Domdom__Pic.png" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">39</div>
+                        <div class="cardName">Today's attendees</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">37</div>
+                        <div class="cardName">Active</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="walk-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">2</div>
+                        <div class="cardName">Absent</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="warning-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">P 150.30</div>
+                        <div class="cardName">Rate per Hour</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ attendance List ================= -->
+            <div class="details">
+                <div class="detail-list">
+                    <div class="cardHeader">
+                        <h2>List of attendees</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <div class="btn-tools">
+                        <a href="#" class="btn-pdf">Download pdf</a>
+                        <a href="#" class="btn-excel">Download Excel</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>No.</td>
+                                <td>Name</td>
+                                <td>ID Number</td>
+                                <td>Time in</td>
+                                <td>Time out</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>8</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status absent">Absent</span></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Leanard Divino C, Domdom</td>
+                                <td>2022-10395</td>
+                                <td>7:00AM</td>
+                                <td>5:00PM</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+    <!-- =========== Scripts =========  -->
+    <script src="/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
